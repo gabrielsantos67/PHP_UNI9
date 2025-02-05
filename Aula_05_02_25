@@ -1,0 +1,41 @@
+<?php // sempre utilizar <?php para começar o código
+
+//echo "Bom dia"; // echo usado para o print no php
+
+//$nome = "Gabriel"; // utilizar $ antes das variáveis
+
+//$n = "Gabriel";
+//$a = "2015";
+//$b = "2025";
+
+//$resut = $b - $a;
+
+//if ($resut > 18) {
+//     echo "Bom dia!! meu nome é {$n} e tenho {$resut} anos e eu sou maior de idade";
+// }
+  //  else { 
+//         echo  "Bom dia!! meu nome é {$n} e tenho {$resut} anos e eu sou menor de idade";
+//     }
+// //echo "Bom dia!! meu nome é ".$n." e tenho ".$resut." anos"; // primeiro modelo
+
+//echo "Bom dia!! meu nome é {$n} e tenho {$resut} anos"; // Segundo modelo
+
+
+// Sempre lembrar do PONTO E VIRGULA
+
+/* para comentário de várias linhas
+*/
+
+$ano_n = 2004;
+$ano_at = 2024;
+$cont=0;
+$inter = 4;
+
+$resut = ($ano_at - $ano_n) / $inter;
+
+//for($i=$ano_n;$i<=$ano_at;$i+=4){
+//    $cont++;
+//}
+echo "Ao longa da minha vida ocorreram {$resut} copas do mundo";
+
+?>
