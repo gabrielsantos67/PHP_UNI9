@@ -1,0 +1,19 @@
+<?php
+
+/*
+$nome = "Gabriel";
+$idade = 20;
+$peso = 85.6;
+
+$exibir = true;
+
+echo "$nome tem $idade anos e pesa $peso KG";
+
+
+$aluno = array(); // como fazer um array 
+$aluno[0] = "Gabriel";
+$aluno[1] = 20;
+$aluno[2] = 85;
+
+echo "$aluno[0] tem $aluno[1] anos e pesa $aluno[2] KG";
+*/
