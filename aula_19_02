@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<?php
+$ra = 924121015;
+$nome = "Gabriel";
+
+echo "<input type = 'button' value = 'Salvar' /><br><br>";
+
+echo "Dados cadastrados <br><br>";
+
+echo "ra = $ra, nome = $nome <br><br>";
+
+$nota = 7.5;
+$faltas = 20;
+
+if ($nota>=6 && $faltas<=20){
+	echo "Aprovado";
+}else if ($nota<6 && $faltas>=20){
+	echo "Reprovado por nota e falta";
+}else if ($nota<6){
+	echo "Reprovado por nota";
+}else{
+	echo "Reprovado por falta";
+}
+
+// relacionais >, <, >=,<=,!=, ==
+// lógiocos !(não), &&(e), || (ou)
+
+// For
+echo "<br>For<br>";
+
+for ($i=1;$i<=10;$i++){
+	echo $i;
+}
+
+// while
+
+echo "<br><br>While<br>";
+
+$i=1;
+while($i<=10){
+	echo $i;
+    $i++;
+}
+?>
+
+ 
+</body>
+</html>
