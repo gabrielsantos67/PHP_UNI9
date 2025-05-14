@@ -1,0 +1,11 @@
+C:\xampp\htdocs\Gabs\Troca de tela\bin\Debug\Troca de tela.exe.config
+C:\xampp\htdocs\Gabs\Troca de tela\bin\Debug\Troca de tela.exe
+C:\xampp\htdocs\Gabs\Troca de tela\bin\Debug\Troca de tela.pdb
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca de tela.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca_de_tela.Form1.resources
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca_de_tela.Form2.resources
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca_de_tela.Properties.Resources.resources
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca de tela.csproj.GenerateResource.cache
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca de tela.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca de tela.exe
+C:\xampp\htdocs\Gabs\Troca de tela\obj\Debug\Troca de tela.pdb

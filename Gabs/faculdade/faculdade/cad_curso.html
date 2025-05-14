@@ -1,0 +1,148 @@
+	<!doctype html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Bootstrap demo</title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+	  </head>
+	  <body>
+
+	<div class="container text-left">
+		<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">UniProg</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Alunos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Cursos</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Diretorias
+		          </a>
+		          <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="#">Gerênciais</a></li>
+		            <li><a class="dropdown-item" href="#">Informática</a></li>
+		            <li><a class="dropdown-item" href="#">Exatas</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	  <div class="row">
+	    <div class="col">      
+	    </div>
+	    <div class="col-8">
+	    	<div class="row">
+				  <div class="col">      
+
+				  	<div class="mb-1"><!-- mb - margin-botttom e mt - margin-top-->
+						  <label for="nome" class="form-label mb-0 mt-2">RA</label>
+						  <input type="text" class="form-control form-control-sm" id="nome">
+						</div>
+						<div class="mb-1"><!-- mb - margin-botttom e mt - margin-top-->
+						  <label for="nome" class="form-label mb-0 mt-2">Nome</label>
+						  <input type="text" class="form-control form-control-sm" id="nome">
+						</div>
+					</div>
+					<div class="col">
+						<div class="mb-1">
+						  <label for="curso" class="form-label mb-0 mt-2">Curso</label>
+						  <input type="text" class="form-control form-control-sm" id="curso">
+						</div>
+						<div class="mb-3">
+						  <label for="curso" class="form-label mb-0 mt-2">CPF</label>
+						  <input type="text" class="form-control form-control-sm" id="curso">
+						</div>
+					</div>
+				</div>
+			
+				<div class="mb-4 mt-3">
+					<button type="button" class="btn btn-primary" onclick="buscar()">Buscar</button>					
+					<button type="button" class="btn btn-primary">Salvar</button>
+				</div>
+				
+				<table class="table">
+				  <thead>
+					<tr>
+					  <th scope="col">Editar</th>
+					  <th scope="col">Excluir</th>
+					  <th scope="col">RA</th>
+					  <th scope="col">Nome</th>
+					  <th scope="col">Curso</th>
+					  <th scope="col">CPF</th>
+					</tr>
+				  </thead>
+				  <tbody id="corpo_tabela">
+				  </tbody>
+				  
+				</table>		
+		  
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+	</div>
+
+		<script>
+
+			function buscar(){
+
+				var vetor_alunos = [];
+
+				var json_aluno1  = {};
+				json_aluno1.ra = 456;
+				json_aluno1.nome = "Marquelandia";
+				json_aluno1.curso = "Ads";
+				json_aluno1.cpf = "124.456.789-52";
+
+				var json_aluno2  = {};
+				json_aluno2.ra = 789;
+				json_aluno2.nome = "Artenildo";
+				json_aluno2.curso = "Letras";
+				json_aluno2.cpf = "789.123.741-96";
+
+				vetor_alunos.push(json_aluno1);
+				vetor_alunos.push(json_aluno2);
+
+				montar_tabela(vetor_alunos);
+				
+			}
+
+			function montar_tabela(vetor_alunos){
+				var linhas = "";
+				for (i=0; i<vetor_alunos.length; i++){
+					var ra    = vetor_alunos[i].ra;
+					var nome  = vetor_alunos[i].nome;
+					var curso = vetor_alunos[i].curso;
+					var cpf   = vetor_alunos[i].cpf;
+
+					var linha = `<tr>
+									<td><img src="editar.png"/></td>
+									<td><img src="excluir.png"/></td>
+									<td>${ra}</td>
+									<td>${nome}</td>
+									<td>${curso}</td>
+									<td>${cpf}</td>
+								</tr>`;
+
+					linhas += linha;
+				}
+				document.getElementById("corpo_tabela").innerHTML = linhas;
+
+			}
+
+
+		</script>		
+		
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+	  </body>
+	</html>
